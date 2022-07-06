@@ -4,8 +4,38 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Installation
 
+#### Yarn Installation
+
 ```
-$ yarn
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+$ sudo apt-get update
+$ sudo apt-get install yarn
+```
+
+It is required install node with the version >= 16.14 to install dependency packages.
+
+Therefore, you first must install the node using nvm.
+
+#### NVM Installation
+
+```shell
+$ sudo apt-get install curl
+$ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+$ source ~/.profile
+```
+
+#### Node Installation
+
+```shell
+$ nvm install 16.14
+```
+
+#### Dependency Packages Installation
+
+```shell
+$ yarn install
 ```
 
 ### Local Development
