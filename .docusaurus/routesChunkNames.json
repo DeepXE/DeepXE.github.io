@@ -1,51 +1,51 @@
 {
-  "/__docusaurus/debug-203": {
+  "/__docusaurus/debug-1a5": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/__docusaurus/debug/config-cba": {
+  "/__docusaurus/debug/config-c8b": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/__docusaurus/debug/content-2aa": {
+  "/__docusaurus/debug/content-e00": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     },
     "allContent": "allContent---docusaurus-debug-content-246-9aa"
   },
-  "/__docusaurus/debug/globalData-e2d": {
+  "/__docusaurus/debug/globalData-a2d": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/__docusaurus/debug/metadata-cc9": {
+  "/__docusaurus/debug/metadata-61f": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/__docusaurus/debug/registry-7e1": {
+  "/__docusaurus/debug/registry-5ae": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/__docusaurus/debug/routes-e1d": {
+  "/__docusaurus/debug/routes-521": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-752-c92"
+      "plugin": "plugin---docusaurus-debug-5-a-5-830"
     }
   },
-  "/blog-a57": {
+  "/blog-58c": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "plugin---blog-476-0f8"
+      "plugin": "plugin---bloga-86-3c9"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -55,25 +55,25 @@
     ],
     "metadata": "metadata---blogb-2-b-df1"
   },
-  "/blog/archive-bf2": {
+  "/blog/archive-270": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "plugin---blog-476-0f8"
+      "plugin": "plugin---bloga-86-3c9"
     },
     "archive": "archive---blog-archiveb-2-f-393"
   },
-  "/blog/tags-6d6": {
+  "/blog/tags-e91": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "plugin---blog-476-0f8"
+      "plugin": "plugin---bloga-86-3c9"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
   },
-  "/blog/tags/hello-e68": {
+  "/blog/tags/hello-4e4": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---blog-476-0f8"
+      "plugin": "plugin---bloga-86-3c9"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
@@ -84,25 +84,25 @@
     "tag": "tag---blog-tags-hello-30-a-bed",
     "listMetadata": "listMetadata---blog-tags-hello-664-70a"
   },
-  "/blog/welcome-b6d": {
+  "/blog/welcome-69c": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---blog-476-0f8"
+      "plugin": "plugin---bloga-86-3c9"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-welcome-4-ea-020"
   },
-  "/markdown-page-06b": {
+  "/markdown-page-234": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---markdown-pagec-9-b-bfd"
+      "plugin": "plugin---markdown-paged-21-99c"
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-93d": {
+  "/docs-ec3": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "plugin---docs-49-a-de0"
+      "plugin": "plugin---docsada-cf7"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
@@ -126,6 +126,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-02-데이터-다루기-훈련-세트와-테스트-세트-070-6cb"
   },
+  "/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀-ea7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-03-회귀-알고리즘과-모델-규제-k-최근접-이웃-회귀b-6-d-cf6"
+  },
   "/docs/03 회귀 알고리즘과 모델 규제/선형 회귀-cd1": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-03-회귀-알고리즘과-모델-규제-선형-회귀e-01-654"
@@ -133,10 +137,6 @@
   "/docs/03 회귀 알고리즘과 모델 규제/특성 공학과 규제-64b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-03-회귀-알고리즘과-모델-규제-특성-공학과-규제a-29-48a"
-  },
-  "/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀-ea7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-03-회귀-알고리즘과-모델-규제-k-최근접-이웃-회귀b-6-d-cf6"
   },
   "/docs/04 다양한 분류 알고리즘/로지스틱 회귀-ce7": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -158,6 +158,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-05-트리-알고리즘-트리의-앙상블ab-7-82f"
   },
+  "/docs/06 비지도 학습/k-평균-3a1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-06-비지도-학습-k-평균-0-c-3-64f"
+  },
   "/docs/06 비지도 학습/군집 알고리즘-08b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-06-비지도-학습-군집-알고리즘d-48-43e"
@@ -165,10 +169,6 @@
   "/docs/06 비지도 학습/주성분 분석-303": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-06-비지도-학습-주성분-분석-9-cc-837"
-  },
-  "/docs/06 비지도 학습/k-평균-3a1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-06-비지도-학습-k-평균-0-c-3-64f"
   },
   "/docs/07 딥러닝을 시작합니다/신경망 모델 훈련-fea": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -194,6 +194,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-08-이미지를-위한-인공-신경망-합성곱-신경망의-시각화-958-271"
   },
+  "/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀-98a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-09-텍스트를-위한-인공-신경망-lstm과-gru-셀-125-17e"
+  },
   "/docs/09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망-348": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-09-텍스트를-위한-인공-신경망-순차-데이터와-순환-신경망-53-f-ac3"
@@ -201,10 +205,6 @@
   "/docs/09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기-ee7": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-09-텍스트를-위한-인공-신경망-순환-신경망으로-imdb-리뷰-분류하기-793-46e"
-  },
-  "/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀-98a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-09-텍스트를-위한-인공-신경망-lstm과-gru-셀-125-17e"
   },
   "/docs/category/01-나의-첫-머신러닝-50b": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -246,10 +246,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
   },
-  "/-005": {
+  "/-88d": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---markdown-pagec-9-b-bfd"
+      "plugin": "plugin---markdown-paged-21-99c"
     },
     "config": "config---5-e-9-4f3"
   }
