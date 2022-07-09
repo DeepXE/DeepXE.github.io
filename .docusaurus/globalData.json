@@ -36,6 +36,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
+              "path": "/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "03 회귀 알고리즘과 모델 규제/선형 회귀",
               "path": "/docs/03 회귀 알고리즘과 모델 규제/선형 회귀",
               "sidebar": "tutorialSidebar"
@@ -43,11 +48,6 @@
             {
               "id": "03 회귀 알고리즘과 모델 규제/특성 공학과 규제",
               "path": "/docs/03 회귀 알고리즘과 모델 규제/특성 공학과 규제",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
-              "path": "/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -76,6 +76,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "06 비지도 학습/k-평균",
+              "path": "/docs/06 비지도 학습/k-평균",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "06 비지도 학습/군집 알고리즘",
               "path": "/docs/06 비지도 학습/군집 알고리즘",
               "sidebar": "tutorialSidebar"
@@ -83,11 +88,6 @@
             {
               "id": "06 비지도 학습/주성분 분석",
               "path": "/docs/06 비지도 학습/주성분 분석",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "06 비지도 학습/k-평균",
-              "path": "/docs/06 비지도 학습/k-평균",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -121,6 +121,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
+              "path": "/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망",
               "path": "/docs/09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망",
               "sidebar": "tutorialSidebar"
@@ -128,11 +133,6 @@
             {
               "id": "09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기",
               "path": "/docs/09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
-              "path": "/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
               "sidebar": "tutorialSidebar"
             },
             {

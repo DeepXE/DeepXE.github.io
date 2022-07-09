@@ -4,72 +4,72 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '203'),
+    component: ComponentCreator('/__docusaurus/debug', '1a5'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', 'cba'),
+    component: ComponentCreator('/__docusaurus/debug/config', 'c8b'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', '2aa'),
+    component: ComponentCreator('/__docusaurus/debug/content', 'e00'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'e2d'),
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'a2d'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', 'cc9'),
+    component: ComponentCreator('/__docusaurus/debug/metadata', '61f'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '7e1'),
+    component: ComponentCreator('/__docusaurus/debug/registry', '5ae'),
     exact: true
   },
   {
     path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', 'e1d'),
+    component: ComponentCreator('/__docusaurus/debug/routes', '521'),
     exact: true
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'a57'),
+    component: ComponentCreator('/blog', '58c'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', 'bf2'),
+    component: ComponentCreator('/blog/archive', '270'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '6d6'),
+    component: ComponentCreator('/blog/tags', 'e91'),
     exact: true
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', 'e68'),
+    component: ComponentCreator('/blog/tags/hello', '4e4'),
     exact: true
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'b6d'),
+    component: ComponentCreator('/blog/welcome', '69c'),
     exact: true
   },
   {
     path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '06b'),
+    component: ComponentCreator('/markdown-page', '234'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '93d'),
+    component: ComponentCreator('/docs', 'ec3'),
     routes: [
       {
         path: '/docs/01 나의 첫 머신러닝/마켓과 머신러닝',
@@ -102,6 +102,12 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
+        path: '/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀',
+        component: ComponentCreator('/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀', 'ea7'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
         path: '/docs/03 회귀 알고리즘과 모델 규제/선형 회귀',
         component: ComponentCreator('/docs/03 회귀 알고리즘과 모델 규제/선형 회귀', 'cd1'),
         exact: true,
@@ -110,12 +116,6 @@ export default [
       {
         path: '/docs/03 회귀 알고리즘과 모델 규제/특성 공학과 규제',
         component: ComponentCreator('/docs/03 회귀 알고리즘과 모델 규제/특성 공학과 규제', '64b'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀',
-        component: ComponentCreator('/docs/03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀', 'ea7'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -150,6 +150,12 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
+        path: '/docs/06 비지도 학습/k-평균',
+        component: ComponentCreator('/docs/06 비지도 학습/k-평균', '3a1'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
         path: '/docs/06 비지도 학습/군집 알고리즘',
         component: ComponentCreator('/docs/06 비지도 학습/군집 알고리즘', '08b'),
         exact: true,
@@ -158,12 +164,6 @@ export default [
       {
         path: '/docs/06 비지도 학습/주성분 분석',
         component: ComponentCreator('/docs/06 비지도 학습/주성분 분석', '303'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/06 비지도 학습/k-평균',
-        component: ComponentCreator('/docs/06 비지도 학습/k-평균', '3a1'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -204,6 +204,12 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
+        path: '/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀',
+        component: ComponentCreator('/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀', '98a'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
         path: '/docs/09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망',
         component: ComponentCreator('/docs/09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망', '348'),
         exact: true,
@@ -212,12 +218,6 @@ export default [
       {
         path: '/docs/09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기',
         component: ComponentCreator('/docs/09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기', 'ee7'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀',
-        component: ComponentCreator('/docs/09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀', '98a'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -285,7 +285,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '005'),
+    component: ComponentCreator('/', '88d'),
     exact: true
   },
   {
