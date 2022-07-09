@@ -20,6 +20,11 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/python-icon.svg').default
   },
   {
+    link: '/docs/category/algorithms--data-structures',
+    title: 'Algorithms & Data Structures',
+    Svg: require('@site/static/img/algorithms-icon.svg').default
+  },
+  {
     link: '/docs/category/mathematics',
     title: 'Mathematics',
     Svg: require('@site/static/img/mathematics-icon.svg').default
@@ -28,7 +33,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({link, title, Svg}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
         <a href={link}>
           <Svg className={styles.featureSvg} role="img" />
