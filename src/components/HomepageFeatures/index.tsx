@@ -2,70 +2,60 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-// type FeatureItem = {
-//   title: string;
-//   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-//   description: JSX.Element;
-// };
+type FeatureItem = {
+  link: string;
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+};
 
-// const FeatureList: FeatureItem[] = [
-//   {
-//     title: 'Easy to Use',
-//     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-//     description: (
-//       <>
-//         Docusaurus was designed from the ground up to be easily installed and
-//         used to get your website up and running quickly.
-//       </>
-//     ),
-//   },
-//   {
-//     title: 'Focus on What Matters',
-//     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-//     description: (
-//       <>
-//         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-//         ahead and move your docs into the <code>docs</code> directory.
-//       </>
-//     ),
-//   },
-//   {
-//     title: 'Powered by React',
-//     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-//     description: (
-//       <>
-//         Extend or customize your website layout by reusing React. Docusaurus can
-//         be extended while reusing the same header and footer.
-//       </>
-//     ),
-//   },
-// ];
+const FeatureList: FeatureItem[] = [
+  {
+    link: '/docs/category/artificial-intelligence',
+    title: 'Artificial Intelligence',
+    Svg: require('@site/static/img/tensorflow-icon.svg').default
+  },
+  {
+    link: '/docs/category/programming-languages',
+    title: 'Languages',
+    Svg: require('@site/static/img/python-icon.svg').default
+  },
+  {
+    link: '/docs/category/algorithms--data-structures',
+    title: 'Algorithms & Data Structures',
+    Svg: require('@site/static/img/algorithms-icon.svg').default
+  },
+  {
+    link: '/docs/category/mathematics',
+    title: 'Mathematics',
+    Svg: require('@site/static/img/mathematics-icon.svg').default
+  },
+];
 
-// function Feature({title, Svg, description}: FeatureItem) {
-//   return (
-//     <div className={clsx('col col--4')}>
-//       <div className="text--center">
-//         <Svg className={styles.featureSvg} role="img" />
-//       </div>
-//       <div className="text--center padding-horiz--md">
-//         <h3>{title}</h3>
-//         <p>{description}</p>
-//       </div>
-//     </div>
-//   );
-// }
+function Feature({link, title, Svg}: FeatureItem) {
+  return (
+    <div className={clsx('col col--3')}>
+      <div className="text--center">
+        <a href={link}>
+          <Svg className={styles.featureSvg} role="img" />
+        </a>
+      </div>
+      <div className="text--center padding-horiz--md">
+        <h3>{title}</h3>
+      </div>
+    </div>
+  );
+}
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <></>
-    // <section className={styles.features}>
-    //   <div className="container">
-    //     <div className="row">
-    //       {FeatureList.map((props, idx) => (
-    //         <Feature key={idx} {...props} />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          {FeatureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
