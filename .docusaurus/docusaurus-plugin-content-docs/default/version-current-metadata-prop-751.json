@@ -278,6 +278,12 @@
       "description": "지도 학습과 비지도 학습",
       "sidebar": "tutorialSidebar"
     },
+    "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀": {
+      "id": "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
+      "title": "03-1 k-최근접 이웃 회귀",
+      "description": "k-최근접 이웃 회귀",
+      "sidebar": "tutorialSidebar"
+    },
     "03 회귀 알고리즘과 모델 규제/선형 회귀": {
       "id": "03 회귀 알고리즘과 모델 규제/선형 회귀",
       "title": "03-2 선형 회귀",
@@ -288,12 +294,6 @@
       "id": "03 회귀 알고리즘과 모델 규제/특성 공학과 규제",
       "title": "03-3 특성 공학과 규제",
       "description": "다중 회귀",
-      "sidebar": "tutorialSidebar"
-    },
-    "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀": {
-      "id": "03 회귀 알고리즘과 모델 규제/k-최근접 이웃 회귀",
-      "title": "03-1 k-최근접 이웃 회귀",
-      "description": "k-최근접 이웃 회귀",
       "sidebar": "tutorialSidebar"
     },
     "04 다양한 분류 알고리즘/로지스틱 회귀": {
@@ -326,6 +326,12 @@
       "description": "정형 데이터와 비정형 데이터",
       "sidebar": "tutorialSidebar"
     },
+    "06 비지도 학습/k-평균": {
+      "id": "06 비지도 학습/k-평균",
+      "title": "06-2 k-평균",
+      "description": "k-평균 알고리즘 소개",
+      "sidebar": "tutorialSidebar"
+    },
     "06 비지도 학습/군집 알고리즘": {
       "id": "06 비지도 학습/군집 알고리즘",
       "title": "06-1 군집 알고리즘",
@@ -336,12 +342,6 @@
       "id": "06 비지도 학습/주성분 분석",
       "title": "06-3 주성분 분석",
       "description": "차원과 차원 축소",
-      "sidebar": "tutorialSidebar"
-    },
-    "06 비지도 학습/k-평균": {
-      "id": "06 비지도 학습/k-평균",
-      "title": "06-2 k-평균",
-      "description": "k-평균 알고리즘 소개",
       "sidebar": "tutorialSidebar"
     },
     "07 딥러닝을 시작합니다/신경망 모델 훈련": {
@@ -380,6 +380,12 @@
       "description": "가중치 시각화",
       "sidebar": "tutorialSidebar"
     },
+    "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀": {
+      "id": "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
+      "title": "09-3 LSTM과 GRU 셀",
+      "description": "LSTM 구조",
+      "sidebar": "tutorialSidebar"
+    },
     "09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망": {
       "id": "09 텍스트를 위한 인공 신경망/순차 데이터와 순환 신경망",
       "title": "09-1 순차 데이터와 순환 신경망",
@@ -390,12 +396,6 @@
       "id": "09 텍스트를 위한 인공 신경망/순환 신경망으로 IMDB 리뷰 분류하기",
       "title": "09-2 순환 신경망으로 IMDB 리뷰 분류하기",
       "description": "IMDB 리뷰 데이터셋",
-      "sidebar": "tutorialSidebar"
-    },
-    "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀": {
-      "id": "09 텍스트를 위한 인공 신경망/LSTM과 GRU 셀",
-      "title": "09-3 LSTM과 GRU 셀",
-      "description": "LSTM 구조",
       "sidebar": "tutorialSidebar"
     },
     "intro": {

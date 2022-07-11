@@ -27,7 +27,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/kimjonghyeok/Documents/DeepXE.github.io/sidebars.js",
+          "sidebarPath": "/home/sdh2983/DeepXE.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "remarkPlugins": [
             null
@@ -41,7 +41,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/Users/kimjonghyeok/Documents/DeepXE.github.io/src/css/custom.css"
+          "customCss": "/home/sdh2983/DeepXE.github.io/src/css/custom.css"
         }
       }
     ]
