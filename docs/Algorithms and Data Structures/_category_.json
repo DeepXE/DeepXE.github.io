@@ -1,8 +1,8 @@
 {
   "label": "Algorithms & Data Structures",
-  "position": 4,
+  "position": 5,
   "link": {
     "type": "generated-index",
-    "description": "To learn what is Algorithms and Data Structures."
+    "description": "To learn what are Algorithms and Data Structures."
   }
 }
