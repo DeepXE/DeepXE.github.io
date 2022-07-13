@@ -484,6 +484,9 @@ print(knr.score(test_input, test_target))
 
 ---
 
+농어 데이터 세팅
+
+
 ```python
 import numpy as np
 #features of perch
@@ -502,8 +505,7 @@ perch_weight = np.array([5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 8
        850.0, 900.0, 1015.0, 820.0, 1100.0, 1000.0, 1100.0, 1000.0,
        1000.0])
 ```
-
-농어 데이터 세팅
+데이터의 산점도 그래프 출력
 
 ```python
 import matplotlib.pyplot as plt
@@ -516,7 +518,7 @@ plt.show()
 
 ![png](JungHun_files/JungHun1.png)
 
-데이터의 산점도 그래프 출력
+train_test_split을 이용한 데이터 셋 준비
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -537,7 +539,7 @@ print(train_input.shape, test_input.shape)
 > (42,) (14,)
 > (42, 1) (14, 1)
 
-train_test_split을 이용한 데이터 셋 준비
+최근접 이웃 회귀 알고리즘 훈련과 모델 평가(결정계수)
 
 ```python
 #K-최근접 이웃 회귀 알고리즘 구현 클래스
@@ -553,7 +555,7 @@ print(knr.score(test_input, test_target))
 ```
 > 0.992809406101064
 
-최근접 이웃 회귀 알고리즘 훈련과 모델 평가(결정계수)
+mean_absolute_error 함수로 평균적인 편차 구하기
 
 ```python
 #타깃과 예측의 절댓값 오차의 평균을 반환
@@ -569,7 +571,7 @@ print(mae)
 ```
 > 19.157142857142862
 
-mean_absolute_error 함수로 평균적인 편차 구하기
+약간의 과소적합, 이를 해결하기 위한 n_neighbors의 조정
 
 ```python
 #과대적합: 훈련세트에만 잘 맞는 모델 - 훈련 세트 점수 >>> 테스트 점수 세트(일반적인 적용 불가능)
@@ -585,7 +587,7 @@ print(knr.score(test_input, test_target))
 > 0.9804899950518966
 > 0.9746459963987609
 
-약간의 과소적합, 이를 해결하기 위한 n_neighbors의 조정
+reshape함수의 사용(test)
 
 ```python
 test_array=np.array([1, 2, 3, 4, 5, 6])
@@ -597,5 +599,4 @@ print(test_array)
  [[1 2 3]
  [4 5 6]]
 
-reshape함수의 사용(test)
 
