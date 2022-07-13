@@ -477,3 +477,125 @@ print(knr.score(test_input, test_target))
    - k-최근접 이웃의 경우 k값을 늘립니다.
 5. 과소적합일 경우 모델의 복잡도를 높혀야합니다.
    - k-최근접 이웃의 경우 k값을 줄입니다.
+
+
+## 정훈
+3-1 k-최근접 이웃 회귀 알고리즘
+
+---
+
+```python
+import numpy as np
+#features of perch
+perch_length = np.array([8.4, 13.7, 15.0, 16.2, 17.4, 18.0, 18.7, 19.0, 19.6, 20.0, 21.0,
+       21.0, 21.0, 21.3, 22.0, 22.0, 22.0, 22.0, 22.0, 22.5, 22.5, 22.7,
+       23.0, 23.5, 24.0, 24.0, 24.6, 25.0, 25.6, 26.5, 27.3, 27.5, 27.5,
+       27.5, 28.0, 28.7, 30.0, 32.8, 34.5, 35.0, 36.5, 36.0, 37.0, 37.0,
+       39.0, 39.0, 39.0, 40.0, 40.0, 40.0, 40.0, 42.0, 43.0, 43.0, 43.5,
+       44.0])
+
+perch_weight = np.array([5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 85.0, 110.0,
+       115.0, 125.0, 130.0, 120.0, 120.0, 130.0, 135.0, 110.0, 130.0,
+       150.0, 145.0, 150.0, 170.0, 225.0, 145.0, 188.0, 180.0, 197.0,
+       218.0, 300.0, 260.0, 265.0, 250.0, 250.0, 300.0, 320.0, 514.0,
+       556.0, 840.0, 685.0, 700.0, 700.0, 690.0, 900.0, 650.0, 820.0,
+       850.0, 900.0, 1015.0, 820.0, 1100.0, 1000.0, 1100.0, 1000.0,
+       1000.0])
+```
+
+농어 데이터 세팅
+
+```python
+import matplotlib.pyplot as plt
+
+plt.scatter(perch_length, perch_weight)
+plt.xlabel("length")
+plt.ylabel("weight")
+plt.show()
+```
+
+![png](JungHun_files/JungHun1.png)
+
+데이터의 산점도 그래프 출력
+
+```python
+from sklearn.model_selection import train_test_split
+
+#훈련 세트, 테스트 세트 생성(data: length, target: weight)
+train_input, test_input, train_target, test_target=train_test_split(perch_length, perch_weight, random_state=42)
+print(train_input.shape, test_input.shape)
+
+#각 원소를 길이가 1인 배열을 가지는 2차원 배열 생성
+#-> reshape(배열의 원소 개수, 원소 배열 당 원소 개수)
+
+#=reshape(42, 1)
+train_input=train_input.reshape(-1, 1)
+#=reshape(14, 1)
+test_input=test_input.reshape(-1, 1)
+print(train_input.shape, test_input.shape)
+```
+> (42,) (14,)
+> (42, 1) (14, 1)
+
+train_test_split을 이용한 데이터 셋 준비
+
+```python
+#K-최근접 이웃 회귀 알고리즘 구현 클래스
+from sklearn.neighbors import KNeighborsRegressor
+
+knr=KNeighborsRegressor()
+knr.fit(train_input, train_target)
+#모델 평가 - 결정계수
+#1-(타깃-예측)^2의 합 / (타깃-평균)^2의 합
+#-> 예측이 타깃과 가까울수록 분자가 0과 가까워져 결정계수가 1에 가까워짐
+#-> 예측이 평균 정도에 그치면 분수가 1에 가까워져 결정계수가 0에 가까워짐
+print(knr.score(test_input, test_target))
+```
+> 0.992809406101064
+
+최근접 이웃 회귀 알고리즘 훈련과 모델 평가(결정계수)
+
+```python
+#타깃과 예측의 절댓값 오차의 평균을 반환
+from sklearn.metrics import mean_absolute_error
+
+#test_input에 대한 예측값
+test_prediction=knr.predict(test_input)
+#test_target(타깃)과 예측값에 대한 차이의 평균
+mae=mean_absolute_error(test_target, test_prediction)
+
+#평균적으로 얼마나 타깃과 멀어진 값을 예측하는가?
+print(mae)
+```
+> 19.157142857142862
+
+mean_absolute_error 함수로 평균적인 편차 구하기
+
+```python
+#과대적합: 훈련세트에만 잘 맞는 모델 - 훈련 세트 점수 >>> 테스트 점수 세트(일반적인 적용 불가능)
+#과소적합: 훈련이 덜 된 모델 - 훈련 세트의 점수가 매우 나쁘고 테스트 세트 점수가 높거나, 둘 다 낮은 경우
+
+#과소적합 해결을 위해 neighbors 수 줄이기
+#-> 국지적인 패턴에 좀 더 민감해짐
+knr.n_neighbors=3
+knr.fit(train_input, train_target)
+print(knr.score(train_input, train_target))
+print(knr.score(test_input, test_target))
+```
+> 0.9804899950518966
+> 0.9746459963987609
+
+약간의 과소적합, 이를 해결하기 위한 n_neighbors의 조정
+
+```python
+test_array=np.array([1, 2, 3, 4, 5, 6])
+print(test_array.shape)
+test_array=test_array.reshape(2, 3)
+print(test_array)
+```
+> (6,)
+ [[1 2 3]
+ [4 5 6]]
+
+reshape함수의 사용(test)
+
