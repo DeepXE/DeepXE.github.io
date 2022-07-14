@@ -15,6 +15,11 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/tensorflow-icon.svg').default
   },
   {
+    link: '/docs/category/data-analysis',
+    title: 'Data Analysis',
+    Svg: require('@site/static/img/pandas-icon.svg').default
+  },
+  {
     link: '/docs/category/programming-languages',
     title: 'Languages',
     Svg: require('@site/static/img/python-icon.svg').default
