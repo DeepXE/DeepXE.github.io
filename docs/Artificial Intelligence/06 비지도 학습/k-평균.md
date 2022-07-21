@@ -310,3 +310,203 @@ plt.show()
 :::warning K값
 k값이 일정 이상 늘려 꺾이는 지점이 생기면, 그 이후로는 클러스터 개수에 따른 밀집된 정도가 크게 개선되지 않는다.(이니셔의 감소 정도가 줄어든다)
 :::
+
+## 우진
+
+```python
+# 데이터 다운로드
+!wget https://bit.ly/fruits_300_data -O fruits_300.npy
+```   
+
+```python
+# 2차원 배열로 변경
+import numpy as np
+
+fruits = np.load('fruits_300.npy')
+fruits_2d = fruits.reshape(-1, 100*100)
+```
+
+
+```python
+from sklearn.cluster import KMeans
+
+km = KMeans(n_clusters=3, random_state=42)  # 클러스터 개수 지정
+km.fit(fruits_2d)
+```
+
+
+
+
+    > KMeans(n_clusters=3, random_state=42)
+
+
+
+
+```python
+# 각 샘플이 어떤 레이블에 해당되는지 나타냄 / 클러스터를 3으로 지정했기 때문에 출력값은 0, 1, 2 중 하나로 나옴
+print(km.labels_)
+```
+
+    > [2 2 2 2 2 0 2 2 2 2 2 2 2 2 2 2 2 2 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+     2 2 2 2 2 0 2 0 2 2 2 2 2 2 2 0 2 2 2 2 2 2 2 2 2 0 0 2 2 2 2 2 2 2 2 0 2
+     2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0
+     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1]
+    
+
+
+```python
+# 레이블 0, 1, 2로 모은 샘플의 갯수 출력
+print(np.unique(km.labels_, return_counts=True))
+```
+
+    > (array([0, 1, 2], dtype=int32), array([111,  98,  91]))
+    
+
+
+```python
+import matplotlib.pyplot as plt
+
+# (샘플 개수, 너비, 높이)의 3차원 배열을 입력받아 가로로 10개씩 이미지 출력
+def draw_fruits(arr, ratio=1):
+    n = len(arr)    # n은 샘플 개수입니다
+
+    # 한 줄에 10개씩 이미지를 그립니다. 샘플 개수를 10으로 나누어 전체 행 개수를 계산합니다. 
+    rows = int(np.ceil(n/10))
+
+    # 행이 1개 이면 열 개수는 샘플 개수입니다. 그렇지 않으면 10개입니다.
+    cols = n if rows < 2 else 10
+    fig, axs = plt.subplots(rows, cols, 
+                            figsize=(cols*ratio, rows*ratio), squeeze=False)
+    for i in range(rows):
+        for j in range(cols):
+            if i*10 + j < n:    # n 개까지만 그립니다.
+                axs[i, j].imshow(arr[i*10 + j], cmap='gray_r')
+            axs[i, j].axis('off')
+    plt.show()
+```
+<br/>    
+
+> 불리언 인덱싱을 통한 이미지 출력
+
+```python
+draw_fruits(fruits[km.labels_==0])
+```
+
+
+    
+![png](woojin_files/woojin_6_2_0.png)
+    
+
+
+
+```python
+draw_fruits(fruits[km.labels_==1])
+```
+
+
+    
+![png](woojin_files/woojin_6_2_1.png)
+    
+
+
+
+```python
+draw_fruits(fruits[km.labels_==2])
+```
+
+
+    
+![png](woojin_files/woojin_6_2_2.png)
+    
+
+
+### 클러스터 중심
+
+
+```python
+draw_fruits(km.cluster_centers_.reshape(-1, 100, 100), ratio=3)
+```
+
+
+    
+![png](woojin_files/woojin_6_2_3.png)
+    
+
+
+
+```python
+# 훈련 데이터 샘플에서 클러스터 중심까지 거리로 변환
+print(km.transform(fruits_2d[100:101]))
+```
+
+    > [[3393.8136117  8837.37750892 5267.70439881]]
+
+> 위의 출력은 차례로 레이블 0, 1, 2를 의미하며 레이블 0까지의 거리가 가장 가깝기 때문에 아래의 출력에서 [0]을 출력하게 된다.
+
+<br/>    
+
+```python
+# 가장 가까운 클러스터 중심을 예측 클래스로 출력
+print(km.predict(fruits_2d[100:101]))
+```
+
+    > [0]
+    
+
+
+```python
+draw_fruits(fruits[100:101])
+```
+
+
+    
+![png](woojin_files/woojin_6_2_4.png)
+    
+
+
+
+```python
+# 알고리즘이 반복한 횟수
+print(km.n_iter_)
+```
+
+    > 4
+    
+
+### 최적의 k 찾기 (= 엘보우 방법)
+
+- k-평균 알고리즘의 단점은 클러스터 개수를 사전에 정해야 한다는 것.
+- 그러나 실전에서는 몇개의 클러스터가 있는지 알 수 없음.
+
+```python
+inertia = []
+for k in range(2, 7):
+    km = KMeans(n_clusters=k, random_state=42)  # 클러스터 개수를 늘려가면서 적절한 개수를 찾는다.
+    km.fit(fruits_2d)
+    inertia.append(km.inertia_)
+
+plt.plot(range(2, 7), inertia)
+plt.xlabel('k')
+plt.ylabel('inertia')
+plt.show()
+```
+
+> 일반적으로 클러스터 개수가 늘어나면 클러스터 개개의 크기도 줄어들기 때문에 이너셔도 줄어든다.
+    
+![png](woojin_files/woojin_6_2_5.png)
+    
+
+
+- 그래프가 꺾이는 지점. 즉, k값이 3.0 부근이 최적의 클러스터 개수라고 볼 수 있다.
+- 이 지점부터는 클러스터 개수를 늘려도 클러스터에 잘 밀집된 정도가 크게 개선되지 않는다. (= 이너셔가 크게 줄어들지 않음)
+
+> 정리
+ - k-평균 알고리즘 : 처음에 랜덤하게 클러스터 중심을 정하고 클러스터를 생성한다. 이후 클러스터의 중심을 이동하고다시 클러스터를 만드는 식으로 반복해서 최적의 클러스터를 구성하는 알고리즘.
+ - 클러스터 중심 (=센트로이드) : k-평균 알고리즘이 만든 클러스터에 속한 샘플의 **특성 평균값**. 가장 가까운 클러스터 중심을 샘플의 또 다른 특성으로 사용하거나 새로운 샘플에 대한 예측으로 활용할 수 있음.
+ - 이너셔 : 클러스터 중심과 샘플 사이 거리의 제곱 합.
+ - 엘보우 방법 : 최적의 클러스터 개수를 정하는 방법 중 하나. 클러스터 개수에 따라 이너셔 감소가 꺾이는 지점이 적절한 클러스터 개수 k가 될 수 있음. 이 모양을 따서 엘보우 방법이라고 부름.
