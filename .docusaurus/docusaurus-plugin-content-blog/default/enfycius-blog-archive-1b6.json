@@ -1,0 +1,54 @@
+{
+  "blogPosts": [
+    {
+      "id": "welcome",
+      "metadata": {
+        "permalink": "/_enfycius/blog/welcome",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2022-12-22-welcome/index.md",
+        "source": "@site/blog/2022-12-22-welcome/index.md",
+        "title": "Welcome",
+        "description": "",
+        "date": "2022-12-22T00:00:00.000Z",
+        "formattedDate": "December 22, 2022",
+        "tags": [
+          {
+            "label": "facebook",
+            "permalink": "/_enfycius/blog/tags/facebook"
+          },
+          {
+            "label": "hello",
+            "permalink": "/_enfycius/blog/tags/hello"
+          },
+          {
+            "label": "docusaurus",
+            "permalink": "/_enfycius/blog/tags/docusaurus"
+          }
+        ],
+        "readingTime": 0,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "김종혁",
+            "title": "Undergradue Student",
+            "url": "https://enfycius.github.io",
+            "imageURL": "https://cdn-icons-png.flaticon.com/128/149/149071.png",
+            "key": "jong"
+          }
+        ],
+        "frontMatter": {
+          "slug": "welcome",
+          "title": "Welcome",
+          "authors": [
+            "jong"
+          ],
+          "tags": [
+            "facebook",
+            "hello",
+            "docusaurus"
+          ]
+        }
+      },
+      "content": ""
+    }
+  ]
+}
