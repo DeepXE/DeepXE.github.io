@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Translate, {translate} from '@docusaurus/Translate';
 
-import background from "./../../static/img/background.jpg";
+import background from "./../../static/img/background.jpeg";
 
 import styles from './index.module.css';
 

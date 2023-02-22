@@ -34,7 +34,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/mnt/c/Users/DeepXE/Documents/jong/DeepXE.github.io/sidebars.js",
+          "sidebarPath": "/mnt/c/Users/DeepXE/Documents/eddylily/DeepXE.github.io/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "remarkPlugins": [
             null
@@ -48,7 +48,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/mnt/c/Users/DeepXE/Documents/jong/DeepXE.github.io/src/css/custom.css"
+          "customCss": "/mnt/c/Users/DeepXE/Documents/eddylily/DeepXE.github.io/src/css/custom.css"
         }
       }
     ]
