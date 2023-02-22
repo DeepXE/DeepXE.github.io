@@ -46,7 +46,7 @@ export default function DocItemContent({children}) {
       )}
       <Sticker visitor_url={visitor_url}/>
       <MDXContent>{children}</MDXContent>
-      <Foot_Sticker gmail_url={"mailto:" + gmail_url} kakaotalk_url={kakaotalk_url} instagram_url={instagram_url}></Foot_Sticker>
+      {/* <Foot_Sticker gmail_url={"mailto:" + gmail_url} kakaotalk_url={kakaotalk_url} instagram_url={instagram_url}></Foot_Sticker> */}
       
     </div>
   );
