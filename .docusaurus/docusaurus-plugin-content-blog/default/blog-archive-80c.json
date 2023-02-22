@@ -1,0 +1,44 @@
+{
+  "blogPosts": [
+    {
+      "id": "welcome",
+      "metadata": {
+        "permalink": "/blog/welcome",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2022-12-22-welcome/index.md",
+        "source": "@site/blog/2022-12-22-welcome/index.md",
+        "title": "Welcome",
+        "description": "",
+        "date": "2022-12-22T00:00:00.000Z",
+        "formattedDate": "2022년 12월 22일",
+        "tags": [
+          {
+            "label": "DeepXE",
+            "permalink": "/blog/tags/deep-xe"
+          }
+        ],
+        "readingTime": 0,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "김종혁",
+            "title": "Undergradue Student",
+            "url": "https://enfycius.github.io",
+            "imageURL": "https://cdn-icons-png.flaticon.com/128/149/149071.png",
+            "key": "jong"
+          }
+        ],
+        "frontMatter": {
+          "slug": "welcome",
+          "title": "Welcome",
+          "authors": [
+            "jong"
+          ],
+          "tags": [
+            "DeepXE"
+          ]
+        }
+      },
+      "content": ""
+    }
+  ]
+}
