@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Data Analysis": {
+    "message": "Data Analysis",
+    "description": "The label for category Data Analysis in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 6 Data Loading, Storage, and File Formats": {
+    "message": "Chapter 6 Data Loading, Storage, and File Formats",
+    "description": "The label for category Chapter 6 Data Loading, Storage, and File Formats in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 7 Data Cleaning and Preparation": {
+    "message": "Chapter 7 Data Cleaning and Preparation",
+    "description": "The label for category Chapter 7 Data Cleaning and Preparation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 8 Data Wrangling: Join, Combine, and Reshape": {
+    "message": "Chapter 8 Data Wrangling: Join, Combine, and Reshape",
+    "description": "The label for category Chapter 8 Data Wrangling: Join, Combine, and Reshape in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Numerical Analysis": {
+    "message": "Numerical Analysis",
+    "description": "The label for category Numerical Analysis in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DirectX": {
+    "message": "DirectX",
+    "description": "The label for category DirectX in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data Structures & Algorithms": {
+    "message": "Data Structures & Algorithms",
+    "description": "The label for category Data Structures & Algorithms in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.C++": {
+    "message": "C++",
+    "description": "The label for category C++ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Lesson 4 Managing Arrays and Strings": {
+    "message": "Lesson 4 Managing Arrays and Strings",
+    "description": "The label for category Lesson 4 Managing Arrays and Strings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Python": {
+    "message": "Python",
+    "description": "The label for category Python in sidebar tutorialSidebar"
+  }
+}
