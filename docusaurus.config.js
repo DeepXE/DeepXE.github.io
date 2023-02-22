@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DeepXE",
-  tagline: 'Welcome to DeepXE',
+  tagline: 'Go Deeper, Seek Extraordinary',
   url: 'https://DeepXE.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
