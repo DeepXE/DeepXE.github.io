@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[207],{896:e=>{e.exports=JSON.parse('{"label":"DeepXE","permalink":"/blog/tags/deep-xe","allTagsPath":"/blog/tags","count":1}')}}]);
