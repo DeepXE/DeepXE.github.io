@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[676],{5838:e=>{e.exports=JSON.parse('{"title":"Learnque","slug":"/category/learnque","permalink":"/en/docs/category/learnque","navigation":{"next":{"title":"Introduction","permalink":"/en/docs/Learnque/intro"}}}')}}]);
